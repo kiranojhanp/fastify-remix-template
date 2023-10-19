@@ -1,0 +1,23 @@
+{
+  "name": "remix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "remix build"
+  },
+  "keywords": [],
+  "author": "Kiran Ojha",
+  "license": "MIT",
+  "dependencies": {
+    "@remix-run/node": "^2.1.0",
+    "@remix-run/react": "^2.1.0",
+    "@remix-run/serve": "^2.1.0",
+    "isbot": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.1.0"
+  }
+}
