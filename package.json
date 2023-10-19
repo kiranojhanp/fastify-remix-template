@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "remix build",
-    "preview": "node server.mjs",
-    "preview:fastify": "node fastify.mjs"
+    "preview": "node fastify.mjs"
   },
   "keywords": [],
   "author": "Kiran Ojha",
