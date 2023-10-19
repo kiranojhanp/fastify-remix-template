@@ -58,5 +58,9 @@ let address = await app.listen({ port, host: "0.0.0.0" });
 console.log(`✅ app ready: ${address}`);
 
 if (process.env.NODE_ENV === "development") {
+  console.log("Hello");
+}
+
+if (process.env.NODE_ENV === "development") {
   await broadcastDevReady(initialBuild);
 }

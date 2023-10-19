@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json && remix build",
-    "dev": "remix dev --manual -c \"node --enable-source-maps ./build/fastify.js\"",
+    "dev": "NODE_ENV=development remix dev --manual -c \"node --watch --enable-source-maps ./build/fastify.js\"",
     "start": "node ./build/fastify.js",
     "typecheck": "tsc"
   },
