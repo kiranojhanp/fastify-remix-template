@@ -2,11 +2,11 @@
   "name": "remix",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "fastify.ts",
   "type": "module",
   "scripts": {
-    "build": "remix build",
-    "preview": "node fastify.mjs"
+    "build": "tsc -p tsconfig.json && remix build",
+    "preview": "node build/fastify.js"
   },
   "keywords": [],
   "author": "Kiran Ojha",
@@ -22,6 +22,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.1.0"
+    "@remix-run/dev": "^2.1.0",
+    "@types/node": "^20.8.7",
+    "chokidar": "^3.5.3",
+    "typescript": "^5.2.2"
   }
 }
