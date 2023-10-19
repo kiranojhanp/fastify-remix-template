@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json && remix build",
-    "preview": "node build/fastify.js"
+    "dev": "remix dev --manual -c \"node --enable-source-maps ./build/fastify.js\"",
+    "start": "node ./build/fastify.js",
+    "typecheck": "tsc"
   },
   "keywords": [],
   "author": "Kiran Ojha",
@@ -14,8 +16,10 @@
   "dependencies": {
     "@fastify/early-hints": "^1.0.1",
     "@mcansh/remix-fastify": "^3.0.2",
+    "@remix-run/css-bundle": "^2.1.0",
     "@remix-run/node": "^2.1.0",
     "@remix-run/react": "^2.1.0",
+    "chokidar": "^3.5.3",
     "fastify": "^4.24.2",
     "isbot": "^3.7.0",
     "react": "^18.2.0",
@@ -24,7 +28,8 @@
   "devDependencies": {
     "@remix-run/dev": "^2.1.0",
     "@types/node": "^20.8.7",
-    "chokidar": "^3.5.3",
+    "@types/react": "^18.2.29",
+    "@types/react-dom": "^18.2.14",
     "typescript": "^5.2.2"
   }
 }
